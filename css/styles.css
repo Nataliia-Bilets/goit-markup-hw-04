@@ -303,19 +303,17 @@ ul {
    height: 44px;
    border-radius: 50%;
    background-color: var(--primary-bgc);
+   color: var(--primary-link-color);
 }
 .social-list-link:hover,
 .social-list-link:focus {
    background-color: var(--accente-text-color);
+   color: var(--secondary-link-color);
 }
 .social-list-icon {
    width: 20px;
    height: 20px;
-   fill: var(--primary-link-color);
-}
-.social-list-link:hover .social-list-icon,
-.social-list-link:focus .social-list-icon {
-   fill: var(--secondary-link-color);
+   fill: currentColor;
 }
 
 
@@ -342,21 +340,19 @@ ul {
    height: 92px;
    border: 1px solid var(--primary-link-color);
    border-radius: 4px;
+   fill: var(--primary-link-color);
 }
 .client-list-link:hover,
 .client-list-link:focus {
    border-color: var(--accente-text-color);
+   fill: var(--accente-text-color);
 }
 .client-list-icon {
    width: 106px;
    height: 60px;
-   fill: var(--primary-link-color);
+   color: currentColor;
 }
-.client-list-link:hover .client-list-icon,
-.client-list-link:focus .client-list-icon {
-   fill: var(--accente-text-color);
 
-}
 /* ===========Підвал========= */
 
 .page-footer {
@@ -403,7 +399,6 @@ ul {
 }
 .footer-title {
    font-weight: 700;
-   font-size: 14px;
    line-height: 1.14;
    text-transform: uppercase;
    color: var(--primary-text-color-team-dark);
@@ -487,7 +482,8 @@ ul {
    display: block;
  
 }
-.project-container:hover {
+.project-container:hover,
+.project-container:focus {
    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .section-menu {
